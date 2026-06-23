@@ -14,3 +14,13 @@ export const NavList = [
   },
   { title: 'Code', list: ['GitHub', 'Documentation', 'Source code'] },
 ];
+
+export const SortTitle = 'Sort by';
+
+export const SortList = [
+  { value: 'latest', text: 'Latest Arrivals' },
+  { value: 'low', text: 'Price: Low to High' },
+  { value: 'high', text: 'Price: High to Low' },
+];
+
+export const ProductsTitle = 'All products';
