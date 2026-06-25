@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @theme {
   --color-background: var(--background);
@@ -53,7 +53,10 @@
 
 @layer components {
   .container {
-    @apply w-[1140px] mx-auto;
+    @apply w-285 mx-auto;
+  }
+  .container2 {
+    @apply w-125 mx-auto;
   }
 }
 

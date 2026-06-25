@@ -1,11 +1,8 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Toaster } from '@/components/ui/sonner';
 import './globals.css';
-import { Geist } from 'next/font/google';
-import { cn } from '@/lib/utils';
-
-const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   title: 'DUYI Store',
@@ -18,13 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={cn('font-sans', geist.variable)}
-    >
+    <html lang="en">
       <body>
         <Header />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>
